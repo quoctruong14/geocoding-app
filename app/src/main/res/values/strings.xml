@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Geocoding-app</string>
+    <string name="app_name">Geocoding app</string>
+    <string name="enter_location">Enter a location</string>
+    <string name="button_search">Search</string>
 </resources>
