@@ -1,4 +1,4 @@
-package com.example.quoctruong.geocoding_app;
+package com.example.googlemapsproject;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.quoctruong.geocoding_app", appContext.getPackageName());
+        assertEquals("com.example.googlemapsproject", appContext.getPackageName());
     }
 }

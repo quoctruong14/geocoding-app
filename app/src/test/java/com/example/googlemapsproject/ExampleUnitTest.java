@@ -1,4 +1,4 @@
-package com.example.quoctruong.geocoding_app;
+package com.example.googlemapsproject;
 
 import org.junit.Test;
 

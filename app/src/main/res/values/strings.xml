@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">Geocoding app</string>
+    <string name="app_name">Google Maps Project</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_maps_key">AIzaSyAMxkKIOejjWvHRinEFlntXQFr567IESB0</string>
     <string name="enter_location">Enter a location</string>
     <string name="button_search">Search</string>
 </resources>
