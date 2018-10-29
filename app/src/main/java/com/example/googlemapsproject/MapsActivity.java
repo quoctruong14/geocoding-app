@@ -93,8 +93,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                 double longitude = (double) location.get("lng");
 
                                 // Add a marker in the given location and move the camera
+                                String markerName = reader.getJSONArray("results").getJSONObject(0).getString("formatted_address");
                                 LatLng myLocation = new LatLng(latitude, longitude);
-                                mMap.addMarker(new MarkerOptions().position(myLocation).title("My Marker"));
+                                mMap.clear();
+                                mMap.addMarker(new MarkerOptions().position(myLocation).title(markerName));
                                 mMap.moveCamera(CameraUpdateFactory.newLatLng(myLocation));
                             }
                         }
