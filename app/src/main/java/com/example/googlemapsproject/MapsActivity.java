@@ -14,6 +14,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;  
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -58,7 +59,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         // Add a marker in Sydney and move the camera
         LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
 
@@ -96,7 +97,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                 String markerName = reader.getJSONArray("results").getJSONObject(0).getString("formatted_address");
                                 LatLng myLocation = new LatLng(latitude, longitude);
                                 mMap.clear();
-                                mMap.addMarker(new MarkerOptions().position(myLocation).title(markerName));
+                                mMap.addMarker(new MarkerOptions().position(myLocation).title(markerName).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
                                 mMap.moveCamera(CameraUpdateFactory.newLatLng(myLocation));
                             }
                         }
